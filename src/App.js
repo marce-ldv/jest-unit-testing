@@ -2,7 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const cities = ['Mar del plata', 'Balcarce', 'Necochea', 'Buenos Aires', 'Lima', 'Tandil' ];
+
+export const randomStrings = () => {
+  return cities[Math.floor(Math.random() * cities.length)]
+}
+
+function App () {
   return (
     <div className="App">
       <header className="App-header">
